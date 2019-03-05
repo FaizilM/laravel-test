@@ -1,0 +1,20 @@
+<table>
+    <thead>
+        <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>password</th>
+        <th>email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($studentsList as $key => $student)
+        <tr>
+        <td>{{$key+1}}</td>
+        <td>{{$student['name']}}</td>
+        <td>{{$student['password']}}</td>
+        <td>{{$student['email']}}</td>
+        </tr>   
+        @endforeach
+    </tbody>
+</table>
